@@ -25,6 +25,9 @@ const Footer = () => (
             <Download size={22} />
           </a>
         </div>
+        <div style={{ marginTop: '1.5rem', color: '#a0a0a0', fontSize: '0.9rem', textAlign: 'center' }}>
+          Prefer direct email? <a href="mailto:alam.raza23.27@gmail.com" style={{ color: '#00c2ff', textDecoration: 'none' }}>alam.raza23.27@gmail.com</a>
+        </div>
       </div>
       <div className="footer-bottom">
         <p>Designed & Built by Raza Alam · {new Date().getFullYear()}</p>

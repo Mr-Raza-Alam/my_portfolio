@@ -39,7 +39,7 @@ const Projects = () => (
   </section>
 );
 
-/** Reusable project card sub-component */
+
 const ProjectCard = ({ title, context, description, tech, github, live, icon }) => (
   <div className="project-card fade-in">
     <div className="project-icon">{icon}</div>

@@ -5,7 +5,7 @@ const Certifications = () => (
       <h2>Credentials & Wins</h2>
     </div>
 
-    {/* Certifications Grid */}
+
     <div className="cert-grid stagger-children">
       <CertCard
         emoji="🔬"
@@ -51,7 +51,7 @@ const Certifications = () => (
       />
     </div>
 
-    {/* Achievements */}
+
     <div className="fade-in">
       <h3 style={{ fontSize: '1.2rem', marginBottom: '1rem', color: '#f0f0f0' }}>
         Achievements & Recognition
@@ -66,7 +66,7 @@ const Certifications = () => (
   </section>
 );
 
-/** Reusable certification card sub-component */
+
 const CertCard = ({ emoji, title, issuer, detail, link }) => (
   <div className="cert-card fade-in">
     <div className="cert-icon">{emoji}</div>
@@ -100,7 +100,7 @@ const CertCard = ({ emoji, title, issuer, detail, link }) => (
   </div>
 );
 
-/** Reusable achievement badge sub-component */
+
 const AchievementBadge = ({ icon, text }) => (
   <div className="achievement-badge">
     <span className="badge-icon">{icon}</span> {text}

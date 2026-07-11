@@ -44,7 +44,7 @@ const About = () => (
   </section>
 );
 
-/** Reusable info card sub-component */
+
 const InfoCard = ({ icon, label, value }) => (
   <div className="info-card">
     <div className="info-card-icon">{icon}</div>

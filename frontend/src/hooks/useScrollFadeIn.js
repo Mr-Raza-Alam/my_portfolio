@@ -1,10 +1,6 @@
 import { useEffect, useRef } from 'react';
 
-/**
- * Custom hook that adds scroll-triggered fade-in animations.
- * Observes elements with `.fade-in` or `.stagger-children` classes
- * and adds `.visible` class when they enter the viewport.
- */
+
 export default function useScrollFadeIn() {
   const ref = useRef();
 

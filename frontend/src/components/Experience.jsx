@@ -30,7 +30,7 @@ const Experience = () => (
   </section>
 );
 
-/** Reusable timeline entry sub-component */
+
 const TimelineItem = ({ date, title, role, description, tags }) => (
   <div className="timeline-item fade-in">
     <div className="timeline-dot" />

@@ -35,7 +35,7 @@ const Education = () => (
   </section>
 );
 
-/** Reusable education card sub-component */
+
 const EducationCard = ({ icon, degree, institution, year, score, scoreLabel }) => (
   <div className="education-card fade-in">
     <div className="education-icon">{icon}</div>

@@ -7,9 +7,9 @@ const Navbar = () => {
   return (
     <nav>
       <div className="container nav-content">
-        <a href="/" className="logo" style={{ textDecoration: 'none', color: 'inherit' }}>Raza Alam.</a>
-        
-        <button 
+        <a href="#hero" className="logo" style={{ textDecoration: 'none', color: 'inherit' }}>Raza Alam.</a>
+
+        <button
           className="mobile-menu-btn"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           aria-label="Toggle navigation"

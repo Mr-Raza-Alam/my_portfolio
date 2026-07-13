@@ -2,7 +2,7 @@ import { ChevronRight, Download, Mail } from 'lucide-react';
 import { Github } from '../icons/SocialIcons';
 
 const Hero = () => (
-  <section className="hero">
+  <section id="hero" className="hero">
     <div className="container hero-container">
       <div className="hero-content">
         <span className="hero-subtitle">&gt; Full-Stack Developer · AI/ML Enthusiast</span>

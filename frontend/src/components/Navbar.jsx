@@ -7,7 +7,7 @@ const Navbar = () => {
   return (
     <nav>
       <div className="container nav-content">
-        <div className="logo">Raza Alam.</div>
+        <a href="/" className="logo" style={{ textDecoration: 'none', color: 'inherit' }}>Raza Alam.</a>
         
         <button 
           className="mobile-menu-btn"

@@ -1,4 +1,4 @@
-import { ChevronRight, Download } from 'lucide-react';
+import { ChevronRight, Download, Mail } from 'lucide-react';
 import { Github } from '../icons/SocialIcons';
 
 const Hero = () => (
@@ -31,6 +31,9 @@ const Hero = () => (
             className="btn btn-outline"
           >
             <Download size={18} /> Resume
+          </a>
+          <a href="#contact" className="btn btn-outline">
+            <Mail size={18} /> Contact Me
           </a>
         </div>
       </div>

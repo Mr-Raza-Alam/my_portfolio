@@ -2,7 +2,7 @@ import { Mail, Phone, Download } from 'lucide-react';
 import { Github, Linkedin } from '../icons/SocialIcons';
 
 const Footer = () => (
-  <footer>
+  <footer id="contact">
     <div className="container">
       <div className="fade-in">
         <span className="section-label">// let's connect</span>

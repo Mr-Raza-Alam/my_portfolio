@@ -26,6 +26,7 @@ const Projects = () => (
           vision="Evolving the portal into a comprehensive, decoupled Micro-Services Ecosystem handling cadet management, inventory, and event orchestration."
           tech={['React', 'Node.js', 'Express', 'MongoDB', 'Tailwind']}
           github="https://github.com/Mr-Raza-Alam/NCC_Selection_Portal"
+          live="https://ncc-selection-portal.vercel.app"
         />
         <ProjectCard
           image={cerImg}

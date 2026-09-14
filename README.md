@@ -13,10 +13,11 @@ I built this portfolio to be fast, responsive, and easy to maintain.
 The portfolio categorizes my work into two distinct tiers:
 
 1. **Real-World Applications:** Systems built to solve actual problems, featuring:
-   - **NCC Selection Portal:** A strict state-machine recruitment dashboard.
+   - **[NCC Selection Portal](https://ncc-selection-portal.vercel.app):** A strict state-machine recruitment dashboard.
    - **Cyber Escape Room:** A LAN-only, air-gapped microservice architecture for live events.
-   - **Campus Crib:** A digital student housing platform.
-2. **Exploratory Projects:** Projects built to master new technologies (like Wanderlust, an Airbnb clone).
+   - **[Campus Crib](https://campuscrib-orpin.vercel.app/):** A digital student housing platform.
+2. **Exploratory Projects:** Projects built to master new technologies.
+   - **[Wanderlust](https://wa-wfh4.onrender.com/listings):** A comprehensive Airbnb clone (MVC, SSR, Node.js).
 
 ## Running it on your machine
 

@@ -4,28 +4,32 @@
 
 /* --- Design Tokens --- */
 :root {
-  --bg-color: #050508;
-  --bg-secondary: #0a0a12;
-  --text-primary: #f0f0f0;
-  --text-secondary: #a0a0a0;
-  --text-muted: #666;
-  --accent-color: #6366f1;
-  --accent-light: #818cf8;
-  --accent-glow: rgba(99, 102, 241, 0.5);
-  --accent-glow-soft: rgba(99, 102, 241, 0.15);
-  --accent-gradient: linear-gradient(135deg, #6366f1, #a855f7);
-  --purple-glow: rgba(168, 85, 247, 0.15);
+  --bg-color: #000000;
+  --bg-secondary: #0a0a0a;
+  --text-primary: #e0e0e0;
+  --text-secondary: #888888;
+  --text-muted: #555555;
+  
+  /* Hacker Green Theme */
+  --accent-color: #00ff41;
+  --accent-light: #4aff78;
+  --accent-glow: rgba(0, 255, 65, 0.3);
+  --accent-glow-soft: rgba(0, 255, 65, 0.1);
+  --accent-gradient: #00ff41;
+  --purple-glow: transparent;
 
-  --glass-bg: rgba(255, 255, 255, 0.03);
-  --glass-bg-hover: rgba(255, 255, 255, 0.06);
-  --glass-border: rgba(255, 255, 255, 0.08);
-  --glass-border-hover: rgba(255, 255, 255, 0.15);
-  --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  /* Brutalist Panels */
+  --glass-bg: #050505;
+  --glass-bg-hover: #111111;
+  --glass-border: #333333;
+  --glass-border-hover: #00ff41;
+  --glass-shadow: 4px 4px 0px rgba(0, 255, 65, 0.2);
 
-  --radius-sm: 8px;
-  --radius-md: 12px;
-  --radius-lg: 16px;
-  --radius-xl: 24px;
+  /* Brutalist Borders (Sharp corners) */
+  --radius-sm: 0px;
+  --radius-md: 0px;
+  --radius-lg: 0px;
+  --radius-xl: 0px;
   --radius-full: 50%;
 }
 
@@ -46,14 +50,11 @@ body {
   color: var(--text-primary);
   line-height: 1.6;
   overflow-x: hidden;
-  background-image:
-    radial-gradient(circle at 15% 50%, var(--accent-glow-soft), transparent 25%),
-    radial-gradient(circle at 85% 30%, var(--purple-glow), transparent 25%);
-  background-attachment: fixed;
 }
 
 /* --- Typography --- */
 h1, h2, h3, h4 {
+  font-family: 'Fira Code', 'Courier New', monospace;
   font-weight: 700;
   letter-spacing: -0.03em;
   line-height: 1.2;
@@ -61,10 +62,7 @@ h1, h2, h3, h4 {
 
 h1 {
   font-size: clamp(2.8rem, 5vw, 4.5rem);
-  background: linear-gradient(135deg, #fff 0%, #a5b4fc 50%, #c084fc 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: var(--text-primary);
 }
 
 h2 {
@@ -94,8 +92,6 @@ p {
 /* --- Glassmorphism Card --- */
 .glass-panel {
   background: var(--glass-bg);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
   border: 1px solid var(--glass-border);
   border-radius: var(--radius-lg);
   box-shadow: var(--glass-shadow);
@@ -140,7 +136,6 @@ p {
   background: transparent;
   color: white;
   border: 1px solid var(--glass-border);
-  backdrop-filter: blur(5px);
 }
 
 .btn-outline:hover {
@@ -226,10 +221,8 @@ nav {
   width: 100%;
   padding: 1rem 0;
   z-index: 100;
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  background: rgba(5, 5, 8, 0.7);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  background: rgba(0, 0, 0, 0.95);
+  border-bottom: 1px solid var(--glass-border);
   transition: all 0.3s ease;
 }
 
@@ -243,10 +236,8 @@ nav {
   font-weight: 800;
   font-size: 1.4rem;
   letter-spacing: -1px;
-  background: var(--accent-gradient);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: var(--accent-color);
+  font-family: 'Fira Code', 'Courier New', monospace;
 }
 
 .nav-links {
@@ -333,6 +324,19 @@ nav {
    ============================================ */
 section {
   padding: 5rem 0;
+  position: relative;
+}
+
+section:not(:last-of-type)::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  max-width: 1000px;
+  height: 1px;
+  background: var(--glass-border);
 }
 
 .section-header {
@@ -687,8 +691,6 @@ section {
 
 .project-card {
   background: var(--glass-bg);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
   border: 1px solid var(--glass-border);
   border-radius: var(--radius-lg);
   box-shadow: var(--glass-shadow);

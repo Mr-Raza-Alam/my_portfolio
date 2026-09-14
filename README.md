@@ -1,24 +1,31 @@
-# My Personal Portfolio 🚀
+# Raza Alam - Full-Stack Developer Portfolio 🚀
 
-Hey! I'm Raza Alam. This is the source code for my personal portfolio website, where I showcase my projects, skills, and certifications. 
+Welcome to the source code of my personal portfolio! This site is designed to showcase my journey as a developer, highlighting my transition from learning fundamentals to engineering production-grade systems.
 
-I built this using React and Vite, focusing on a clean, dark-themed UI with some cool scroll animations. 
+## The Architecture of this Portfolio
 
-## What's inside?
+I built this portfolio to be fast, responsive, and easy to maintain. 
 - **Frontend:** React.js, Vite
-- **Styling:** Custom CSS 
+- **Styling:** Custom CSS (No component libraries, everything built from scratch)
 - **Icons:** Lucide React
+
+## Project Highlights
+The portfolio categorizes my work into two distinct tiers:
+
+1. **Real-World Applications:** Systems built to solve actual problems, featuring:
+   - **NCC Selection Portal:** A strict state-machine recruitment dashboard.
+   - **Cyber Escape Room:** A LAN-only, air-gapped microservice architecture for live events.
+   - **Campus Crib:** A digital student housing platform.
+2. **Exploratory Projects:** Projects built to master new technologies (like Wanderlust, an Airbnb clone).
 
 ## Running it on your machine
 
-If you want to clone this and run it locally, it's pretty simple:
-
-1. Clone this repo to your machine
-2. Open up your terminal and go into the frontend folder:
+1. Clone this repo
+2. Navigate to the frontend folder:
    ```bash
    cd frontend
    ```
-3. Install all the necessary packages:
+3. Install dependencies:
    ```bash
    npm install
    ```
@@ -27,4 +34,4 @@ If you want to clone this and run it locally, it's pretty simple:
    npm run dev
    ```
 
-That's it! Let me know if you have any questions or want to connect on [LinkedIn](https://www.linkedin.com/in/mr-raza-alam/) or [GitHub](https://github.com/Mr-Raza-Alam).
+Let's connect! Find me on [LinkedIn](https://www.linkedin.com/in/mr-raza-alam/) or [GitHub](https://github.com/Mr-Raza-Alam).

@@ -1,22 +1,22 @@
 import { useState, useEffect } from 'react';
-import { Download, Mail, Menu, X, Sun, Moon } from 'lucide-react';
+import { Download, Mail, Menu, X, Palette } from 'lucide-react';
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [isLightMode, setIsLightMode] = useState(false);
+  const [isAmberMode, setIsAmberMode] = useState(false);
 
   useEffect(() => {
-    if (isLightMode) {
-      document.body.classList.add('light-mode');
+    if (isAmberMode) {
+      document.body.classList.add('amber-mode');
     } else {
-      document.body.classList.remove('light-mode');
+      document.body.classList.remove('amber-mode');
     }
-  }, [isLightMode]);
+  }, [isAmberMode]);
 
   return (
     <nav>
       <div className="container nav-content">
-        <a href="#hero" className="logo" style={{ textDecoration: 'none', color: 'inherit' }}>Raza Alam.</a>
+        <a href="#hero" className="logo" style={{ textDecoration: 'none', color: 'inherit' }}>Raza Alam</a>
 
         <button
           className="mobile-menu-btn"
@@ -35,20 +35,22 @@ const Navbar = () => {
           <a href="#certifications" onClick={() => setIsMobileMenuOpen(false)}>Certifications</a>
           
           <button 
-            onClick={() => setIsLightMode(!isLightMode)} 
+            onClick={() => setIsAmberMode(!isAmberMode)} 
             style={{ 
               background: 'transparent', 
               border: 'none', 
-              color: 'var(--text-primary)', 
+              color: 'var(--accent-color)', 
               cursor: 'pointer',
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'center',
-              padding: '0.5rem'
+              padding: '0.5rem',
+              transition: 'color 0.3s ease'
             }}
-            aria-label="Toggle light mode"
+            title="Toggle Terminal Color (Green/Amber)"
+            aria-label="Toggle terminal color"
           >
-            {isLightMode ? <Moon size={20} /> : <Sun size={20} />}
+            <Palette size={20} />
           </button>
 
           <a

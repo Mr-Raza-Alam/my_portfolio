@@ -1100,23 +1100,14 @@ footer > .container > p {
 .stagger-children.visible > *:nth-child(8) { transition-delay: 0.4s; opacity: 1; transform: translateY(0); }
 
 /* ============================================
-   LIGHT MODE
+   AMBER TERMINAL MODE
    ============================================ */
-body.light-mode {
-  --bg-color: #ffffff;
-  --bg-secondary: #f4f4f5;
-  --text-primary: #000000;
-  --text-secondary: #3f3f46;
-  --text-muted: #71717a;
-  
-  --glass-bg: #f9fafb;
-  --glass-bg-hover: #f3f4f6;
-  --glass-border: #e4e4e7;
-  
-  --glass-shadow: 4px 4px 0px rgba(0, 0, 0, 0.1);
-}
-
-/* Light mode specific overrides */
-body.light-mode nav {
-  background: rgba(255, 255, 255, 0.95);
+body.amber-mode {
+  --accent-color: #ffb000;
+  --accent-light: #ffd54f;
+  --accent-glow: rgba(255, 176, 0, 0.3);
+  --accent-glow-soft: rgba(255, 176, 0, 0.1);
+  --accent-gradient: #ffb000;
+  --glass-border-hover: #ffb000;
+  --glass-shadow: 4px 4px 0px rgba(255, 176, 0, 0.2);
 }

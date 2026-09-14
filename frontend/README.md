@@ -1,16 +1,28 @@
-# React + Vite
+# Frontend Architecture - Personal Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This directory contains the React/Vite source code for my personal portfolio.
 
-Currently, two official plugins are available:
+## Design System & Theming Architecture
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+The portfolio utilizes a **custom-built CSS variable architecture** instead of relying on external UI component libraries like Bootstrap or Tailwind. 
 
-## React Compiler
+### The Terminal Brutalism Aesthetic
+The design philosophy intentionally steps away from the trendy "glassmorphism" look (which is often associated with generic SaaS templates and AI-generated designs). 
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Instead, it embraces a **Terminal/Brutalism aesthetic**:
+- High contrast `#000000` pitch-black backgrounds.
+- Hacker Green/Amber accents (`#00ff41`).
+- `Monospace` typography for headings.
+- Hard, solid drop-shadows with sharp `0px` border radiuses.
 
-## Expanding the ESLint configuration
+This raw, developer-focused aesthetic was chosen specifically to highlight my focus on backend systems, networking, and logical engineering (e.g., the Cyber Escape Room and NCC Selection Portal projects).
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Light / Dark Mode Toggle
+State management for the theme is handled locally in `Navbar.jsx`. Toggling the theme injects a `.light-mode` class directly onto the `document.body`.
+
+The CSS architecture is designed so that appending this single class overrides the `:root` variables, seamlessly transforming the dark terminal aesthetic into a clean, bright engineering document.
+
+## Running Locally
+
+1. `npm install`
+2. `npm run dev`

@@ -1,8 +1,17 @@
-import { useState } from 'react';
-import { Download, Mail, Menu, X } from 'lucide-react';
+import { useState, useEffect } from 'react';
+import { Download, Mail, Menu, X, Sun, Moon } from 'lucide-react';
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isLightMode, setIsLightMode] = useState(false);
+
+  useEffect(() => {
+    if (isLightMode) {
+      document.body.classList.add('light-mode');
+    } else {
+      document.body.classList.remove('light-mode');
+    }
+  }, [isLightMode]);
 
   return (
     <nav>
@@ -24,6 +33,24 @@ const Navbar = () => {
           <a href="#projects" onClick={() => setIsMobileMenuOpen(false)}>Projects</a>
           <a href="#education" onClick={() => setIsMobileMenuOpen(false)}>Education</a>
           <a href="#certifications" onClick={() => setIsMobileMenuOpen(false)}>Certifications</a>
+          
+          <button 
+            onClick={() => setIsLightMode(!isLightMode)} 
+            style={{ 
+              background: 'transparent', 
+              border: 'none', 
+              color: 'var(--text-primary)', 
+              cursor: 'pointer',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              padding: '0.5rem'
+            }}
+            aria-label="Toggle light mode"
+          >
+            {isLightMode ? <Moon size={20} /> : <Sun size={20} />}
+          </button>
+
           <a
             href="/Raza_Alam_Resume.pdf"
             target="_blank"

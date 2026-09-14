@@ -122,14 +122,15 @@ p {
 }
 
 .btn-primary {
-  background: var(--accent-gradient);
-  color: white;
-  box-shadow: 0 0 20px var(--accent-glow);
+  background: var(--accent-color);
+  color: #000;
+  border: 1px solid var(--accent-color);
+  box-shadow: 4px 4px 0px rgba(0, 255, 65, 0.4);
 }
 
 .btn-primary:hover {
-  box-shadow: 0 0 35px var(--accent-glow);
-  transform: translateY(-2px) scale(1.03);
+  box-shadow: 6px 6px 0px rgba(0, 255, 65, 0.6);
+  transform: translateY(-2px);
 }
 
 .btn-outline {
@@ -146,16 +147,17 @@ p {
 
 .btn-resume {
   background: transparent;
-  color: var(--accent-light);
+  color: var(--accent-color);
   border: 1px solid var(--accent-color);
   font-size: 0.85rem;
   padding: 0.5rem 1.2rem;
-  border-radius: 20px;
+  border-radius: 0px;
+  box-shadow: 2px 2px 0px rgba(0, 255, 65, 0.2);
 }
 
 .btn-resume:hover {
-  background: var(--accent-glow-soft);
-  box-shadow: 0 0 15px var(--accent-glow);
+  background: rgba(0, 255, 65, 0.1);
+  box-shadow: 4px 4px 0px rgba(0, 255, 65, 0.4);
   transform: translateY(-1px);
 }
 
@@ -164,20 +166,21 @@ p {
   align-items: center;
   gap: 0.4rem;
   padding: 0.4rem 1rem;
-  background-color: #00c2ff;
+  background-color: var(--accent-color);
   color: #000;
   font-weight: 600;
   text-decoration: none;
-  border-radius: var(--radius-sm);
+  border-radius: 0px;
   margin-left: 10px;
   transition: all 0.3s ease;
-  border: none;
+  border: 1px solid var(--accent-color);
+  box-shadow: 2px 2px 0px rgba(0, 255, 65, 0.4);
 }
 
 .btn-hire:hover {
-  background-color: #009acc;
+  background-color: var(--accent-light);
   transform: translateY(-2px);
-  box-shadow: 0 4px 15px rgba(0, 194, 255, 0.4);
+  box-shadow: 4px 4px 0px rgba(0, 255, 65, 0.6);
 }
 
 .mobile-menu-btn {
@@ -1095,3 +1098,25 @@ footer > .container > p {
 .stagger-children.visible > *:nth-child(6) { transition-delay: 0.3s; opacity: 1; transform: translateY(0); }
 .stagger-children.visible > *:nth-child(7) { transition-delay: 0.35s; opacity: 1; transform: translateY(0); }
 .stagger-children.visible > *:nth-child(8) { transition-delay: 0.4s; opacity: 1; transform: translateY(0); }
+
+/* ============================================
+   LIGHT MODE
+   ============================================ */
+body.light-mode {
+  --bg-color: #ffffff;
+  --bg-secondary: #f4f4f5;
+  --text-primary: #000000;
+  --text-secondary: #3f3f46;
+  --text-muted: #71717a;
+  
+  --glass-bg: #f9fafb;
+  --glass-bg-hover: #f3f4f6;
+  --glass-border: #e4e4e7;
+  
+  --glass-shadow: 4px 4px 0px rgba(0, 0, 0, 0.1);
+}
+
+/* Light mode specific overrides */
+body.light-mode nav {
+  background: rgba(255, 255, 255, 0.95);
+}

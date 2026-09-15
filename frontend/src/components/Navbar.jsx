@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Download, Mail, Menu, X, Palette } from 'lucide-react';
+import { Download, Mail, Menu, X, TerminalSquare } from 'lucide-react';
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -50,7 +50,7 @@ const Navbar = () => {
             title="Toggle Terminal Color (Green/Amber)"
             aria-label="Toggle terminal color"
           >
-            <Palette size={20} />
+            <TerminalSquare size={20} />
           </button>
 
           <a

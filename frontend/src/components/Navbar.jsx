@@ -3,15 +3,15 @@ import { Download, Mail, Menu, X, Sun, Moon } from 'lucide-react';
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [isLightMode, setIsLightMode] = useState(false);
+  const [isOrangeTheme, setIsOrangeTheme] = useState(false);
 
   useEffect(() => {
-    if (isLightMode) {
-      document.body.classList.add('light-mode');
+    if (isOrangeTheme) {
+      document.body.classList.add('orange-theme');
     } else {
-      document.body.classList.remove('light-mode');
+      document.body.classList.remove('orange-theme');
     }
-  }, [isLightMode]);
+  }, [isOrangeTheme]);
 
   return (
     <nav>
@@ -35,7 +35,7 @@ const Navbar = () => {
           <a href="#certifications" onClick={() => setIsMobileMenuOpen(false)}>Certifications</a>
 
           <button
-            onClick={() => setIsLightMode(!isLightMode)}
+            onClick={() => setIsOrangeTheme(!isOrangeTheme)}
             style={{
               background: 'transparent',
               border: 'none',
@@ -46,9 +46,9 @@ const Navbar = () => {
               justifyContent: 'center',
               padding: '0.5rem'
             }}
-            aria-label="Toggle light mode"
+            aria-label="Toggle Theme Color"
           >
-            {isLightMode ? <Moon size={20} /> : <Sun size={20} />}
+            {isOrangeTheme ? <Sun size={20} color="var(--accent-color)" /> : <Sun size={20} />}
           </button>
 
           <a

@@ -6,7 +6,7 @@ const Experience = () => (
     </div>
     <div className="timeline">
       <TimelineItem
-        date="Jun 2026 — Present"
+        date="Jun 2026 — Jul 2026"
         title="Internpe"
         role="Java Developer Intern · Remote"
         description="6-week internship focused on Java programming. Building real-world applications with hands-on experience in core Java, object-oriented design, and problem-solving."

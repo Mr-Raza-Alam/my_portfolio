@@ -38,6 +38,13 @@ const Projects = () => (
           github="https://github.com/Mr-Raza-Alam/Cyber_Escape_Room"
         />
         <ProjectCard
+          title="AUS-NCC VAC Examination Portal"
+          context="Full-Stack Developer · MERN · Live"
+          problem="Built a full-stack portal to run the NCC Value Added Course from bulk CSV registration to automated grading. Includes GPS-geofenced class attendance (Haversine formula), a secure live test engine, and Cloudflare R2 integration."
+          vision="Expanding the testing engine with AI-driven dynamic question generation and analytics dashboards for instructors."
+          tech={['React', 'Node.js', 'Express', 'MongoDB', 'JWT', 'Cloudflare R2']}
+        />
+        <ProjectCard
           image={ccImg}
           title="CampusCrib"
           context="Full-Stack Developer · MERN"

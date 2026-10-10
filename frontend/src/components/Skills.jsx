@@ -7,11 +7,11 @@ const Skills = () => (
     <div className="glass-panel fade-in">
       <div className="skills-grid">
         <SkillCategory title="Languages" tags={['JavaScript (ES6+)', 'Python', 'Java', 'C++', 'HTML5', 'CSS3']} />
-        <SkillCategory title="Frontend" tags={['React.js', 'EJS', 'Bootstrap', 'Responsive Design']} />
-        <SkillCategory title="Backend" tags={['Node.js', 'Express.js', 'Flask', 'REST APIs', 'Microservices']} />
+        <SkillCategory title="Frontend" tags={['React.js', 'Vite', 'EJS', 'Bootstrap', 'Responsive Design']} />
+        <SkillCategory title="Backend" tags={['Node.js', 'Express.js', 'Flask', 'Firebase', 'REST APIs', 'WebSocket', 'Microservices']} />
         <SkillCategory title="Database" tags={['MongoDB', 'Mongoose ODM', 'SQL']} />
         <SkillCategory title="AI / ML" tags={['Supervised Learning', 'Classification', 'Clustering', 'Pandas', 'NumPy']} />
-        <SkillCategory title="Tools & DevOps" tags={['Git / GitHub', 'Vercel', 'Render', 'Postman', 'VS Code']} />
+        <SkillCategory title="Tools & DevOps" tags={['Git / GitHub', 'Docker', 'Vercel', 'Render', 'Postman', 'VS Code']} />
       </div>
     </div>
   </section>

@@ -1,17 +1,17 @@
 import { useState, useEffect } from 'react';
-import { Download, Mail, Menu, X, TerminalSquare } from 'lucide-react';
+import { Download, Mail, Menu, X, Sun, Moon } from 'lucide-react';
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [isAmberMode, setIsAmberMode] = useState(false);
+  const [isLightMode, setIsLightMode] = useState(false);
 
   useEffect(() => {
-    if (isAmberMode) {
-      document.body.classList.add('amber-mode');
+    if (isLightMode) {
+      document.body.classList.add('light-mode');
     } else {
-      document.body.classList.remove('amber-mode');
+      document.body.classList.remove('light-mode');
     }
-  }, [isAmberMode]);
+  }, [isLightMode]);
 
   return (
     <nav>
@@ -33,24 +33,22 @@ const Navbar = () => {
           <a href="#projects" onClick={() => setIsMobileMenuOpen(false)}>Projects</a>
           <a href="#education" onClick={() => setIsMobileMenuOpen(false)}>Education</a>
           <a href="#certifications" onClick={() => setIsMobileMenuOpen(false)}>Certifications</a>
-          
-          <button 
-            onClick={() => setIsAmberMode(!isAmberMode)} 
-            style={{ 
-              background: 'transparent', 
-              border: 'none', 
-              color: 'var(--accent-color)', 
+
+          <button
+            onClick={() => setIsLightMode(!isLightMode)}
+            style={{
+              background: 'transparent',
+              border: 'none',
+              color: 'var(--text-primary)',
               cursor: 'pointer',
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'center',
-              padding: '0.5rem',
-              transition: 'color 0.3s ease'
+              padding: '0.5rem'
             }}
-            title="Toggle Terminal Color (Green/Amber)"
-            aria-label="Toggle terminal color"
+            aria-label="Toggle light mode"
           >
-            <TerminalSquare size={20} />
+            {isLightMode ? <Moon size={20} /> : <Sun size={20} />}
           </button>
 
           <a

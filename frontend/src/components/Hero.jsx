@@ -39,7 +39,7 @@ const Hero = () => (
       </div>
 
       <div className="hero-image-wrapper">
-        <img src="/My_Officpic2.1.png" alt="Raza Alam" className="hero-image" />
+        <img src="/portfolio_its_me.png" alt="Raza Alam" className="hero-image" />
       </div>
     </div>
   </section>

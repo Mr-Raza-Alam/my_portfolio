@@ -13,7 +13,7 @@ const Education = () => (
         institution="Assam University, Silchar"
         year="2023 — 2027"
         score="7.4 / 10"
-        scoreLabel="CGPA"
+        scoreLabel="SGPA"
       />
       <EducationCard
         icon={<BookOpen size={22} />}

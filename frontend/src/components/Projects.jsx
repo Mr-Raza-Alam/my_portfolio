@@ -1,6 +1,7 @@
 import { ExternalLink, Terminal, Server, Code, Layers } from 'lucide-react';
 import { Github } from '../icons/SocialIcons';
 import nccImg from '../assets/ncc_portal_ss.png';
+import vacImg from '../assets/vac-portal.png';
 import cerImg from '../assets/CER.png';
 import ccImg from '../assets/cc_ss.png';
 
@@ -29,20 +30,13 @@ const Projects = () => (
           live="https://ncc-selection-portal.vercel.app"
         />
         <ProjectCard
-          image={cerImg}
-          title="Cyber Escape Room"
-          context="Architect · Tech-Fest, Assam University"
-          problem="Bypassed unreliable university Wi-Fi and cheat-sharing by engineering a LAN-only, air-gapped competition platform split across 5 fault-tolerant Flask microservices."
-          vision="Containerizing the ecosystem with Docker and integrating a centralized Redis state to feed a unified WebSockets Admin dashboard."
-          tech={['Python', 'Flask', 'JavaScript', 'Microservices', 'LAN Server']}
-          github="https://github.com/Mr-Raza-Alam/Cyber_Escape_Room"
-        />
-        <ProjectCard
+          image={vacImg}
           title="AUS-NCC VAC Examination Portal"
           context="Full-Stack Developer · MERN · Live"
           problem="Built a full-stack portal to run the NCC Value Added Course from bulk CSV registration to automated grading. Includes GPS-geofenced class attendance (Haversine formula), a secure live test engine, and Cloudflare R2 integration."
           vision="Expanding the testing engine with AI-driven dynamic question generation and analytics dashboards for instructors."
           tech={['React', 'Node.js', 'Express', 'MongoDB', 'JWT', 'Cloudflare R2']}
+          github="https://github.com/Mr-Raza-Alam/VAC_NCC"
           live="https://vac-ncc-portal.vercel.app"
         />
         <ProjectCard
@@ -54,6 +48,15 @@ const Projects = () => (
           tech={['React', 'Node', 'Express', 'MongoDB', 'Vercel', 'Render']}
           github="https://github.com/Mr-Raza-Alam/CampusCrib"
           live="https://campuscrib-orpin.vercel.app/"
+        />
+        <ProjectCard
+          image={cerImg}
+          title="Cyber Escape Room"
+          context="Architect · Tech-Fest, Assam University"
+          problem="Bypassed unreliable university Wi-Fi and cheat-sharing by engineering a LAN-only, air-gapped competition platform split across 5 fault-tolerant Flask microservices."
+          vision="Containerizing the ecosystem with Docker and integrating a centralized Redis state to feed a unified WebSockets Admin dashboard."
+          tech={['Python', 'Flask', 'JavaScript', 'Microservices', 'LAN Server']}
+          github="https://github.com/Mr-Raza-Alam/Cyber_Escape_Room"
         />
       </div>
     </div>

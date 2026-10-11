@@ -1,5 +1,6 @@
 import { ChevronRight, Download, Mail } from 'lucide-react';
 import { Github } from '../icons/SocialIcons';
+import ResumeDropdown from './ResumeDropdown';
 
 const Hero = () => (
   <section id="hero" className="hero">
@@ -24,14 +25,11 @@ const Hero = () => (
           >
             <Github size={18} /> GitHub
           </a>
-          <a
-            href="/Raza_Alam_Resume.pdf"
-            target="_blank"
-            rel="noreferrer"
-            className="btn btn-outline"
-          >
-            <Download size={18} /> Resume
-          </a>
+          <ResumeDropdown 
+            buttonClass="btn btn-outline" 
+            iconSize={18} 
+            align="left" 
+          />
           <a href="#contact" className="btn btn-outline">
             <Mail size={18} /> Contact Me
           </a>

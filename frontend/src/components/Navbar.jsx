@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Download, Mail, Menu, X, Sun, Moon } from 'lucide-react';
+import ResumeDropdown from './ResumeDropdown';
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -51,15 +52,10 @@ const Navbar = () => {
             {isOrangeTheme ? <Sun size={20} color="var(--accent-color)" /> : <Sun size={20} />}
           </button>
 
-          <a
-            href="/Raza_Alam_Resume.pdf"
-            target="_blank"
-            rel="noreferrer"
-            className="btn btn-resume"
-            onClick={() => setIsMobileMenuOpen(false)}
-          >
-            <Download size={14} /> Resume
-          </a>
+          <ResumeDropdown 
+            onItemClick={() => setIsMobileMenuOpen(false)} 
+            align="right"
+          />
           <a
             href="mailto:alam.raza23.27@gmail.com?subject=Job%20Opportunity"
             className="btn btn-hire"

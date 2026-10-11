@@ -1,4 +1,4 @@
-import { ChevronRight, Download, Mail } from 'lucide-react';
+import { ChevronRight, Mail } from 'lucide-react';
 import { Github } from '../icons/SocialIcons';
 import ResumeDropdown from './ResumeDropdown';
 

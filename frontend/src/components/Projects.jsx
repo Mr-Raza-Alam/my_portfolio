@@ -1,4 +1,4 @@
-import { ExternalLink, Terminal, Server, Code, Layers } from 'lucide-react';
+import { ExternalLink, Code, Layers } from 'lucide-react';
 import { Github } from '../icons/SocialIcons';
 import nccImg from '../assets/ncc_portal_ss.png';
 import vacImg from '../assets/vac-portal.png';

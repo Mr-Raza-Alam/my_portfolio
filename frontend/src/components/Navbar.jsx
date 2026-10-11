@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Download, Mail, Menu, X, Sun, Moon } from 'lucide-react';
+import { Mail, Menu, X, Sun } from 'lucide-react';
 import ResumeDropdown from './ResumeDropdown';
 
 const Navbar = () => {
